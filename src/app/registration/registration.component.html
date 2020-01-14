@@ -1,0 +1,22 @@
+<div>
+  <p class='text-success' *ngIf='regstatus === "success"'>Successfully registered</p>
+  <p class='text-danger' *ngIf='regstatus == "failure"'>something went wrong</p>
+  <form [formGroup]='regform' (ngSubmit)='register()'>
+    <input type="text" formControlName='name' placeholder="name">
+    <input type="text" formControlName='email' placeholder="email">
+    <input type="password" formControlName='pwd' placeholder="password"> 
+    <input type="password" formControlName="cnfpwd" placeholder="confirm password">
+    <button type='submit'>register</button>
+  </form>
+</div>
+
+<p titleCaseBrohhhh>mama</p>
+<input type="text" #valp placeholder="directive" titleCaseBrohhhh>
+<button (click)="send(valp.value)">some</button>
+{{ 4822145 | currency:'USD':4.1 }}
+<p>{{check()}}</p>
+<app-parent [gpinput]='"Gift from grandparent"'></app-parent>
+
+<h3>removed zonejs and checking for change event</h3>
+<button (click)='chang()'>change</button>
+{{malli}}

@@ -1,0 +1,22 @@
+<div>
+  <p class='text-danger' *ngIf='loginstatus == "failure"'>something went wrong</p>
+  <form [formGroup]='loginForm' (ngSubmit)='login()'>
+    <input type="text" formControlName='username' placeholder="username">
+    <input type="text" formControlName='pwd' placeholder="password">
+    <button type='submit'>signin</button>
+  </form>
+</div>
+<h1>data from home component</h1>
+{{some}}
+
+<h3>body</h3>
+<ng-content select='.mybody'></ng-content>
+
+<h3>footer</h3>
+<ng-content select='.myfoot'></ng-content>
+---------------------
+<app-parentcommunication [whatsthename]='naming' (changename)='newname($event)' (gettingdata)='justobj($event)'></app-parentcommunication>
+
+<div *ngFor='let x of somearr;let i = index'>
+  <p (click)='bungijump(x)'>{{x}}</p>
+</div>

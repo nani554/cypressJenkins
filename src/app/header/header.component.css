@@ -1,0 +1,23 @@
+
+
+div {
+    border-bottom: 1px solid lightblue;
+}
+
+ul {
+    display: inline;
+}
+ul li {
+    display: inline-block;
+    /* margin-right: 20px; */
+    padding: 10px;
+}
+li a {
+    text-decoration: unset;
+}
+
+a.dash {
+    float: right;
+    margin-right: 20px;
+    padding: 10px;
+}

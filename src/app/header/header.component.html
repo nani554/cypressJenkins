@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li><a routerLink='/'>Home</a></li>
+    <li *ngIf='authenticated != "true"'><a routerLink='/reg'>Registration</a></li>
+    <li *ngIf='authenticated != "true"'><a routerLink='/login'>Login</a></li>
+    <li *ngIf='authenticated === "true"'><a (click)='logout()'>logout</a></li>
+  </ul>
+  <a routerLink="/home" class='dash' *ngIf='authenticated === "true"'>Dashboard</a>
+</div>
