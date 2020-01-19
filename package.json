@@ -10,8 +10,8 @@
     "e2e": "ng e2e",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "cy:build:run": "node_modules\.bin\cypress run",
-    "cy:build:open": "node_modules\.bin\cypress open"
+    "cy:build:run": "node_modules/.bin/cypress run",
+    "cy:build:open": "node_modules/.bin/cypress open"
   },
   "private": true,
   "dependencies": {
